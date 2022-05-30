@@ -1,8 +1,11 @@
 # Auto_shop
-A 
+*Porject is still in development*
 
-Web project with Spring boot based on RESTful serviece with database and user interface (developped using Thymeleaf).
+Web project with Spring boot based on RESTful serviece with a database.
 
-Created limited access to some of the features in the application using Spring Security.
+Technologies used:
+- Created limited access to some of the features in the application using Spring Security.
+- User interface (developped using Thymeleaf)
+- Builed a container from a Dockerfile.
+- JS and HTML
 
-Builed a container from a Dockerfile.
