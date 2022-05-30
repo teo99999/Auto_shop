@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head"></head>
+<body>
+<header th:replace="fragments :: header"></header>
+<h4>Find cars in auto shop</h4>
+<div class="col-6">
+    <form action="#" th:action="@{/cars/autoshop}" method="get">
+        <div class="form-group">
+            <label for="autoshop">Search Autoshop</label>
+            <select class="form-control" th:field="${car.autoshop}" id="autoshop">
+                <option value="">Select Autoshop</option>
+                <option th:each="autoshop : ${autoshops}" th:value="${autoshop.id}"
+                        th:text="${autoshop.name}+ ' -> ' + ${autoshop.employeeCount}"></option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Find Cars</button>
+    </form>
+</div>
+<footer th:replace="fragments :: footer"></footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head"></head>
+<body>
+<header th:replace="fragments :: header"></header>
+<h4>Create Appointment</h4>
+<div class="col-6">
+    <form action="#" th:action="@{/appointments/update/{id}(id=${id})}" th:object="${appointment}" method="post">
+
+
+        <div class="form-group">
+            <label for="appointmentDate">Appointment Date</label>
+            <input class="form-control" type="date" th:field="*{appointmentDate}" id="appointmentDate">
+            <span class="text-danger" th:if="${#fields.hasErrors('foundationDate')}"
+                  th:errors="*{appointmentDate}">Appointment Date Error</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update Appointment</button>
+    </form>
+</div>
+<footer th:replace="fragments :: footer"></footer>
+</body>
+</html>
