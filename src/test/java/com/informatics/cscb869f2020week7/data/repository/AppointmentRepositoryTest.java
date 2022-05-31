@@ -19,19 +19,5 @@ public class AppointmentRepositoryTest {
     @Autowired
     private AppointmentRepository appointmentRepository;
 
-    @Test
-    void findAllByClientNameTest() {
-       /* String name = "Ivan";
-        Appointment appointment = new Appointment();
-        appointment.setAppointmentDate(LocalDate.of(2022, 1, 22));
-        appointment.setClientName(name);
-        testEntityManager.persistAndFlush(appointment);
-
-        Appointment appointment1 = new Appointment();
-        appointment1.setAppointmentDate(LocalDate.of(2022, 1, 24));
-        appointment1.setClientName(name);
-        testEntityManager.persistAndFlush(appointment1);
-
-        assertThat(appointmentRepository.findAllByClientName(name).size()).isEqualTo(2);*/
-    }
+  
 }
