@@ -39,7 +39,7 @@ public class CarController {
 
         User principal = (User) authentication.getPrincipal();
 
-        final List<CarViewModel> cars = carService.getCarsByAutoshopId(employeeService.getEmployee(principal.getId()).getAutoshop().getId())) //check original code
+        final List<CarViewModel> cars = carService.getCarsByAutoshopId(employeeService.getEmployee(principal.getId()).getAutoshop().getId())) //check original code for last )
                 .stream()
                 .map(this::convertToCarViewModel)
                 .collect(Collectors.toList());
