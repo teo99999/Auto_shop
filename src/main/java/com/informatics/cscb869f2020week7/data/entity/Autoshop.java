@@ -40,7 +40,13 @@ public class Autoshop extends BaseEntity{
 
     @OneToMany(mappedBy = "autoshop")
     @JsonIgnoreProperties("autoshop")
-    private List<Car> cars;
+    private List<Repair> repairs;
+
+   /* @OneToMany(mappedBy = "autoshop")
+    @JsonIgnoreProperties("autoshop")
+    private List<Car> cars;*/
+
+
 
 
 

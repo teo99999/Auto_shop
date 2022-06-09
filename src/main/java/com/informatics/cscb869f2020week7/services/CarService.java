@@ -20,8 +20,8 @@ public interface CarService {
 
     List<CarDTO> getCarsByProductionYear(LocalDate productionYear);
 
-    List<CarDTO> getCarsByAutoshopId(long id);
-
+ /*   List<CarDTO> getCarsByAutoshopId(long id);
+*/
 
 
 

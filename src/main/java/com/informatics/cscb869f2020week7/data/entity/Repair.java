@@ -27,4 +27,8 @@ public class Repair extends BaseEntity{
 
     private double price;
 
+    @ManyToOne
+    @JoinColumn(name = "autoshop_id")
+    private Autoshop autoshop;
+
 }

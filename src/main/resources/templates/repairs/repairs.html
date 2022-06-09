@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head"></head>
+<body>
+<header th:replace="fragments :: header"></header>
+<h4 th:if="${repairs.size()>0}" th:text="'Repairs: ' + ${repairs.size()}"> </h4>
+<div class=" col-6">
+    <h3 th:unless="${repairs} and ${repairs.size()}">There are no repairs!</h3>
+    <table th:if="${repairs.size()>0}" class="table table-hover">
+        <th>Repair type</th>
+        <th>Repair price</th>
+        <th>Car registration number</th>
+        <th>Car brand</th>
+        <th>Car production year</th>
+        <th></th>
+        <tr th:each="repair : ${repairs}">
+            <td th:text="${repair.repairType}"></td>
+            <td th:text="${repair.price}"></td>
+            <td th:text="${repair.car.registrationNum}"></td>
+            <td th:text="${repair.car.brand}"></td>
+            <td th:text="${repair.car.productionYear}"></td>
+
+
+        </tr>
+
+
+    </table>
+</div>
+<footer th:replace="fragments :: footer"></footer>
+</body>
+</html>

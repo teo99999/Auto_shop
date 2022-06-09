@@ -14,9 +14,9 @@ public interface CarRepository extends JpaRepository<Car, Long> {
 
     List<Car> findAllByProductionYear(LocalDate productionYear);
 
-    List<Car> findAllByAutoshopId(long id);
+ /*   List<Car> findAllByAutoshopId(long id);
 
-    List<Car> findAllByAutoshopName(String name);
+    List<Car> findAllByAutoshopName(String name);*/
 
 
 }

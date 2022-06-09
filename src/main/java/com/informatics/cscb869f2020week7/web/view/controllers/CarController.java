@@ -39,12 +39,13 @@ public class CarController {
 
         User principal = (User) authentication.getPrincipal();
 
-        final List<CarViewModel> cars = carService.getCarsByAutoshopId(employeeService.getEmployee(principal.getId()).getAutoshop().getId()) 
+        final List<CarViewModel> cars = carService.getCars()
                 .stream()
                 .map(this::convertToCarViewModel)
                 .collect(Collectors.toList());
 
         model.addAttribute("cars", cars);
+
 
 
         return "/cars/cars";

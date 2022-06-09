@@ -42,9 +42,9 @@ public class User extends BaseEntity implements UserDetails {
     @ManyToMany(fetch = FetchType.EAGER)
     private Set<Role> authorities;
 
-   /* @ManyToOne
+    @ManyToOne
     @JoinColumn(name = "autoshop_id")
-    private Autoshop autoshop;*/
+    private Autoshop autoshop;
 
 
 

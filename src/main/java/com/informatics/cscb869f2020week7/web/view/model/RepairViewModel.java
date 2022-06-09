@@ -1,4 +1,4 @@
-package com.informatics.cscb869f2020week7.dto;
+package com.informatics.cscb869f2020week7.web.view.model;
 
 import com.informatics.cscb869f2020week7.data.entity.Autoshop;
 import com.informatics.cscb869f2020week7.data.entity.Car;
@@ -7,15 +7,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.validation.constraints.NotNull;
-
 @Getter
 @Setter
 @NoArgsConstructor
-public class RepairDTO {
+
+public class RepairViewModel {
 
     private Car car;
     private RepairType repairType;
     private double price;
     private Autoshop autoshop;
+
 }

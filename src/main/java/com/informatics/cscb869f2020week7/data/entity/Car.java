@@ -41,9 +41,9 @@ public class Car extends BaseEntity{
     @JsonIgnoreProperties("car")
     private List<Repair> repairs;
 
-    @ManyToOne
+/*    @ManyToOne
     @JoinColumn(name = "autoshop_id")
-    private Autoshop autoshop;
+    private Autoshop autoshop;*/
 
     @ManyToOne
     @JoinColumn(name = "client_id")

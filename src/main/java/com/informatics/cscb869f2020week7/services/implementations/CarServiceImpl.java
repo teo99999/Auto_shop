@@ -55,12 +55,12 @@ public class CarServiceImpl implements CarService {
                 .collect(Collectors.toList());
     }
 
-    @Override
+ /*   @Override
     public List<CarDTO> getCarsByAutoshopId(long id){
         return carRepository.findAllByAutoshopId(id).stream()
                 .map(this::convertToCarDTO)
                 .collect(Collectors.toList());
-    }
+    }*/
 
 
 
